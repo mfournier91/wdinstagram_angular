@@ -20,8 +20,8 @@ function RouterCallBack($stateProvider) {
     controllerAs: "entriesIndexViewModel"
   })
   .state("entryShow", {
-    url: "entry/:id/show",
-    templateUrl: "entries/show.html",
+    url: "/entries/:id/show",
+    templateUrl: "js/entries/show.html",
     controller: "entriesShowController",
     controllerAs: "entriesShowViewModel"
   });

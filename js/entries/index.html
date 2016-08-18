@@ -2,8 +2,7 @@
 
 <div data-ng-repeat="entry in entriesIndexViewModel.entries">
   <p>
-    hi
-    <a href="#">{{entry.body}}</a>
+    <a data-ui-sref="entryShow({id: $index})">{{entry.body}}</a>
   </p>
 
 </div>
