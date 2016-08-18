@@ -1,18 +1,25 @@
 "use strict";
 
 (function(){
-  angular.module("wdinstagram", ['ui.router'])
-  .config(["$stateProvider", RouterCallBack]);
+  angular
+  .module("wdinstagram", [
+    "ui.router"
+  ])
+  .config([
+    "$stateProvider",
+    RouterCallBack
+  ]);
 
-function RouterCallBack($stateProvider){
+function RouterCallBack($stateProvider) {
+  console.log("Router callback");
   $stateProvider
-  .state("entriesIndex" {
+  .state("entriesIndex", {
     url:"/entries",
-    templateUrl: "entries/index.html",
+    templateUrl: "js/entries/index.html",
     controller: "entriesIndexController",
-    controller: "entriesIndexViewModel"
+    controllerAs: "entriesIndexViewModel"
   })
-  .state("entryShow"{
+  .state("entryShow", {
     url: "entry/:id/show",
     templateUrl: "entries/show.html",
     controller: "entriesShowController",
