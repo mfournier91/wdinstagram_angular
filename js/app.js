@@ -5,7 +5,13 @@
   .config(["$stateProvider", RouterCallBack]);
 
 function RouterCallBack($stateProvider){
-  console.log("router is working.");
+  $stateProvider
+  .state("entriesIndex") {
+    url:"/entries",
+    templateUrl: "entries/index.html",
+    controller: "entriesIndexController",
+    controller: "enteriesIndexViewModel"
+  }
 }
 
 })();
