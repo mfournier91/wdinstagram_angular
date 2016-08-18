@@ -10,13 +10,13 @@ function RouterCallBack($stateProvider){
     url:"/entries",
     templateUrl: "entries/index.html",
     controller: "entriesIndexController",
-    controller: "enteriesIndexViewModel"
+    controller: "entriesIndexViewModel"
   })
-  .state("enteryShow"{
-    url: "entery/:id/show",
-    templateUrl: "enteries/show.html",
-    controller: "enteriesShowController",
-    controllerAs: "enteriesShowViewModel"
+  .state("entryShow"{
+    url: "entry/:id/show",
+    templateUrl: "entries/show.html",
+    controller: "entriesShowController",
+    controllerAs: "entriesShowViewModel"
   });
 }
 
