@@ -6,12 +6,18 @@
 
 function RouterCallBack($stateProvider){
   $stateProvider
-  .state("entriesIndex") {
+  .state("entriesIndex" {
     url:"/entries",
     templateUrl: "entries/index.html",
     controller: "entriesIndexController",
     controller: "enteriesIndexViewModel"
-  }
+  })
+  .state("enteryShow"{
+    url: "entery/:id/show",
+    templateUrl: "enteries/show.html",
+    controller: "enteriesShowController",
+    controllerAs: "enteriesShowViewModel"
+  });
 }
 
 })();
